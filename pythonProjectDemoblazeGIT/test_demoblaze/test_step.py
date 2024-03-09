@@ -1,8 +1,6 @@
-import pytest
-
 from Config.Config import *
-from test_demoblaze.locators import *
 from test_demoblaze.data import *
+from test_demoblaze.locators import *
 
 
 @pytest.fixture
