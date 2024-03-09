@@ -13,7 +13,7 @@ locator_field_user_name_sign_up = (By.XPATH, '//*[@id="sign-username"]')
 locator_field_user_password = (By.XPATH, '//*[@id="loginpassword"]')
 locator_field_user_password_sign_up = (By.XPATH, '//*[@id="sign-password"]')
 
-"""ОПЕРАЦИИ С ПОКУПКАМИ"""
+locator_user_logged_in_name = (By.XPATH, '//*[@id="nameofuser"]')
 
 
 
