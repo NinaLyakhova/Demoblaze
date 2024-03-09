@@ -1,2 +1,0 @@
-def dataimport():
-    return None
