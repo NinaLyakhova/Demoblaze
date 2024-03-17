@@ -20,5 +20,7 @@ class TestDemoblaze:
         welcome_text = selenium_action.action_get_text(locator_user_logged_in_name)
         assert "Welcome Ivan Ivanov" in welcome_text
         print('Вход успешный')
-        selenium_action.action_close_current_window()
+       # selenium_action.action_close_current_window()
+
+
 

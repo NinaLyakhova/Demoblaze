@@ -26,3 +26,5 @@ def login_form_demoblaze(browser, selenium_action):  # pytest -k login test_step
         selenium_action.action_wait_on_page(3000)
 
     yield login_function
+
+
