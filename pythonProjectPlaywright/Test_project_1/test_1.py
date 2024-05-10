@@ -10,12 +10,12 @@ def test_example():
         browser.close()
 
 
-def test_bank_XYZ():
+def test_bank_xyz():
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
         page.goto("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login")
-        assert page.inner_text('title') == 'XYZ Bank'
-        page.click('div.center:nth-child(1) > button:nth-child(1)')
-        page.screenshot(path='screen\example.png')
+        assert page.title() == 'XYZ Bank'
+        page.click("button.btn.btn-primary")
+        page.screenshot(path='screenshots/example.jpeg')
         browser.close()
