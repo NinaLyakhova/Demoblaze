@@ -10,7 +10,7 @@ def test_example():
         browser.close()
 
 
-def test_bank_xyz():
+def test_bank_xyz_login():
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
@@ -18,4 +18,6 @@ def test_bank_xyz():
         assert page.title() == 'XYZ Bank'
         page.click("button.btn.btn-primary")
         page.screenshot(path='screenshots/example.jpeg')
+        page.click("#userSelect")
+        page.screenshot(path='screenshots/example1.jpeg')
         browser.close()
